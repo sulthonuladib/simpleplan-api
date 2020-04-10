@@ -12,7 +12,7 @@ class ItemsController < ApplicationController
 
 	def create
 		@todo.items.create!(item_params)
-		json_response(@todo,created)
+		json_response(@todo, :created)
 	end
 
 	def update 
@@ -36,6 +36,6 @@ class ItemsController < ApplicationController
 	end
 
 	def set_todo_items
-		@item = @todo.items.find_by!(id: params[:id] if @todo)
+		@item = @todo.items.find_by!(id: params[:id]) if @todo
 	end
 end
