@@ -1,24 +1,15 @@
-# README
+# API Documentations
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## TODO                                			      
+- GET    /todos                                                                         todos#index
+- POST   /todos                                                                         todos#create
+- GET    /todos/:id                                                                     todos#show
+- PUT    /todos/:id                                                                     todos#update
+- DELETE /todos/:id                                                                     todos#destroy
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## TODO ITEMS
+- GET    /todos/:todo_id/items                                                          items#index
+- POST   /todos/:todo_id/items                                                          items#create
+- GET    /todos/:todo_id/items/:id                                                      items#show
+- PUT    /todos/:todo_id/items/:id                                                      items#update
+- DELETE /todos/:todo_id/items/:id                                                      items#destroy
